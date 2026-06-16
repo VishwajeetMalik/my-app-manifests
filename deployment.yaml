@@ -18,11 +18,8 @@ spec:
 
     spec:
       containers:
-      - image: vishwajeet97/my-app:3
-        imagePullPolicy: Always
-
-
-        imagePullPolicy: Always
-
-        ports:
-        - containerPort: 3000
+  - name: my-app
+    image: vishwajeet97/my-app:3
+    imagePullPolicy: Always
+    ports:
+      - containerPort: 3000
